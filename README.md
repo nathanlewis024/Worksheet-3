@@ -17,16 +17,16 @@ Normalization is the process of converting a number inside of an arbitrary range
 These two functions, part of the TypeScript Math library, will be useful for your first question: 
 
 ```typescript
+/**
+ * Returns the larger of a set of supplied numeric expressions.
+ * @param values Numeric expressions to be evaluated.
+ */
 max(...values: number[]): number;
+
 /* Returns the smaller of a set of supplied numeric expressions.
  * @param values Numeric expressions to be evaluated.
  */
-
 min(...values: number[]): number;
-/* Returns the value of a base expression taken to a specified power.
- * @param x The base value of the expression.
- * @param y The exponent value of the expression.
- */
  
 /* Example usage:
  *	var quakes = [0.0, 1.5, 2.0, 1.3];
