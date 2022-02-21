@@ -82,7 +82,16 @@ Let's practice all these concepts with a simple example of a square.  Create you
 
 ![](./images/square.svg)
 
-Now, write out the square's vertex array, using the familiar `Vector3` class (because it's in the *xy*-plane, assume z = 0 for all points):
+Now, write out the square's vertex array, using the format 
+```
+[
+    x1, y1, z1, 
+    x2, y2, z2, 
+    ... , 
+    xn, yn, zn
+]
+``` 
+(because it's in the *xy*-plane, assume z = 0 for all points):
 
 ```typescript
 var squareVertexArray = [
