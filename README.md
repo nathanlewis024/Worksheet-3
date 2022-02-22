@@ -91,7 +91,7 @@ Let's practice all these concepts with a simple example of a square.  Create you
 
 **Replace this image with your drawing:**
 
-![](./images/square.svg)
+![](./images/square1.png)
 
 Now, write out the square's vertex array, using the format 
 ```
