@@ -41,7 +41,13 @@ Using the `min()` and `max()` functions, write a routine to normalize the values
 ```typescript
 function normalizeArray(inputArray : number[]) : number[]
 {
-  /* --- Fill in your algorithm here --- */
+  var normalizedArray : number[] = new Array(inputArray.length());
+  var min = min(inputArray);
+  var max = max(inputArray);
+  for (var i = 0; i < inputArray.length(); i++){
+  	normalizedArray[i] = (inputArray[i] - min) / (max - min);
+  }
+  return normalizedArray;
 }
 ```
 
@@ -59,7 +65,12 @@ normalizedQuakes.forEach((elem: number) => {
 Output: 
 
 ```typescript
-/* --- Fill in the expected console output here --- */
+0
+0.3026
+0.6711
+0.1447
+1
+0.1312
 ```
 
 
@@ -96,6 +107,10 @@ Now, write out the square's vertex array, using the format
 ```typescript
 var squareVertexArray = [
 	/* --- Fill in the vertex array values --- */
+	0,1,0,
+	0,0,0,
+	1,0,0,
+	1,1,0
 ];
 ```
 
@@ -104,7 +119,9 @@ Finally, write out the square's index array based on the indices you defined in 
 ```typescript
 var squareIndexArray = [
     /* --- Fill in your first triangle indices --- */
+    0,1,2,
     /* --- Fill in your second triangle indices --- */
+    2,3,0
 ];
 ```
 
